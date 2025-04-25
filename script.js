@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const folderLinks = document.querySelectorAll('.folder');
 
+  
   folderLinks.forEach(folder => {
     const subnav = folder.querySelector('.subnav');
 
@@ -17,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  
+  
+
   // Mobile menu toggle (if needed)
   const mobileToggle = document.getElementById('mobileMenuLink');
   if (mobileToggle) {
@@ -28,3 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+  function toggleVitae() {
+    const iframeContainer = document.getElementById('vitae-iframe-container');
+    iframeContainer.style.display = iframeContainer.style.display === 'none' ? 'block' : 'none';
+  }
